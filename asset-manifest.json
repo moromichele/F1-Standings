@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/f1-standings/static/js/main.ddb170e9.js",
-    "static/media/Formula1-Regular.ttf": "/f1-standings/static/media/Formula1-Regular.0f4e3d54644717199c6f.ttf",
-    "static/media/Formula1-Bold.ttf": "/f1-standings/static/media/Formula1-Bold.a1d6ae91f3373c37e162.ttf",
-    "index.html": "/f1-standings/index.html",
-    "main.ddb170e9.js.map": "/f1-standings/static/js/main.ddb170e9.js.map"
+    "main.js": "/F1-Standings/static/js/main.990521ed.js",
+    "static/media/Formula1-Regular.ttf": "/F1-Standings/static/media/Formula1-Regular.0f4e3d54644717199c6f.ttf",
+    "static/media/Formula1-Bold.ttf": "/F1-Standings/static/media/Formula1-Bold.a1d6ae91f3373c37e162.ttf",
+    "index.html": "/F1-Standings/index.html",
+    "main.990521ed.js.map": "/F1-Standings/static/js/main.990521ed.js.map"
   },
   "entrypoints": [
-    "static/js/main.ddb170e9.js"
+    "static/js/main.990521ed.js"
   ]
 }
