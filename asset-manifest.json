@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/f1-standings/static/js/main.b935187f.js",
+    "static/media/Formula1-Regular.ttf": "/f1-standings/static/media/Formula1-Regular.0f4e3d54644717199c6f.ttf",
+    "static/media/Formula1-Bold.ttf": "/f1-standings/static/media/Formula1-Bold.a1d6ae91f3373c37e162.ttf",
+    "index.html": "/f1-standings/index.html",
+    "main.b935187f.js.map": "/f1-standings/static/js/main.b935187f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b935187f.js"
+  ]
+}
