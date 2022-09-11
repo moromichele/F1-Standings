@@ -85,7 +85,11 @@ function App() {
 		<ThemeProvider theme={currentTheme ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<Header>
-				<Img src="/f1Logo.png" alt="f1 logo" style={{ margin: "auto 0" }} />
+				<Img
+					src={process.env.PUBLIC_URL + "/f1Logo.png"}
+					alt="f1 logo"
+					style={{ margin: "auto 0" }}
+				/>
 				<TopNav>
 					<NavLink
 						to="constuctors-by-year"
