@@ -50,8 +50,18 @@ const ConstructorCard = (props: ConstructorCardProps): ReactElement => {
 		window.open(props.driverStanding.Constructor.url, "_blank");
 	};
 
+	const handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>, fn: Function): void => {
+		if (e.key === "Enter") {
+			fn();
+		}
+	};
+
 	return (
-		<Container onClick={() => openWiki()}>
+		<Container
+			onClick={() => openWiki()}
+			tabIndex={0}
+			onKeyDown={(e) => handleKeyPress(e, openWiki)}
+		>
 			<div>
 				<Position>{props.driverStanding.position}</Position>
 				<TeamName>{props.driverStanding.Constructor.name}</TeamName>

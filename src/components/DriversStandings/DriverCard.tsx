@@ -70,8 +70,21 @@ const DriverCard = (props: DriverCardProps): ReactElement => {
 		window.open(driver.url, "_blank");
 	};
 
+	const handleKeyPress = (
+		e: React.KeyboardEvent<HTMLDivElement>,
+		fn: Function
+	): void => {
+		if (e.key === "Enter") {
+			fn();
+		}
+	};
+
 	return (
-		<Container onClick={() => openWiki()}>
+		<Container
+			onClick={() => openWiki()}
+			tabIndex={0}
+			onKeyDown={(e) => handleKeyPress(e, openWiki)}
+		>
 			<VStack>
 				<HStack style={{ justifyContent: "space-between" }}>
 					<Position>{position}</Position>

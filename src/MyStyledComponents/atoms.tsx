@@ -25,6 +25,10 @@ export const Button = styled.button`
 	@media ${device.lg} {
 		padding: 9px;
 	}
+
+	&:focus-visible{
+		outline: 2px solid yellow;
+	}
 `;
 
 export const Input = styled.input`
