@@ -12,11 +12,15 @@ const Container = styled.div`
 	overflow: hidden;
 	box-shadow: 1px 2px 4px 0px black;
 	transition: transform linear 0.1s;
-
-	&:hover {
+	cursor: pointer;
+	
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
 		transform: scale(105%);
-		cursor: pointer;
-	}
+	}	
+	
+		
+	
 `;
 
 const DriverCode = styled.div`
@@ -69,7 +73,7 @@ const DriverCard = (props: DriverCardProps): ReactElement => {
 	return (
 		<Container onClick={() => openWiki()}>
 			<VStack>
-				<HStack style={{ justifyContent: "space-between"}}>
+				<HStack style={{ justifyContent: "space-between" }}>
 					<Position>{position}</Position>
 					{driver.code ? <DriverCode>{driver.code}</DriverCode> : ""}
 				</HStack>
@@ -77,9 +81,9 @@ const DriverCard = (props: DriverCardProps): ReactElement => {
 				<DriverFamilyName>{driver.familyName}</DriverFamilyName>
 				<DriverGivenName>[{constructor}]</DriverGivenName>
 
-				<HStack style={{ justifyContent: "space-between"}}>
+				<HStack style={{ justifyContent: "space-between" }}>
 					<p>Points: {points}</p>
-					<HStack style={{gap: "3px"}}>
+					<HStack style={{ gap: "3px" }}>
 						<BiWorld />
 						<p>{nationality}</p>
 					</HStack>

@@ -11,9 +11,11 @@ export const Button = styled.button`
 	font: inherit;
 	transition: transform linear 0.1s;
 	margin: 5px;
-	&:hover {
+
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
 		transform: scale(105%);
-	}
+	}	
 
 	@media ${device.sm} {
 		padding: 6px;

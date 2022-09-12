@@ -67,9 +67,11 @@ const NavLink = styled(Link)<NavLinkProps>`
 
 	background: ${(props) => (props.selected ? "rgba(0, 0, 0, 0.3)" : "")};
 
-	&:hover {
-		color: white;
-		background-color: black;
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			color: white;
+			background-color: black;
+		}
 	}
 
 	@media ${device.sm} {

@@ -12,13 +12,13 @@ const Container = styled.div`
 	padding: 5px;
 	overflow: hidden;
 	box-shadow: 1px 2px 4px 0px black;
-
+	cursor: pointer;
 	transition: transform linear 0.1s;
-
-	&:hover {
+	text-transform: uppercase;
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
 		transform: scale(105%);
-		cursor: pointer;
-	}
+	}	
 `;
 
 const TeamNationality = styled.p`
@@ -27,7 +27,6 @@ const TeamNationality = styled.p`
 `;
 
 const TeamName = styled.p`
-	text-transform: uppercase;
 	font-size: 28px;
 	font-weight: bold;
 `;
@@ -58,7 +57,7 @@ const ConstructorCard = (props: ConstructorCardProps): ReactElement => {
 				<TeamName>{props.driverStanding.Constructor.name}</TeamName>
 			</div>
 			<div style={{ display: "flex", flexDirection: "column" }}>
-				<HStack style={{gap: "3px"}}>
+				<HStack style={{ gap: "3px" }}>
 					<BiWorld />
 					<TeamNationality>
 						{props.driverStanding.Constructor.nationality}
