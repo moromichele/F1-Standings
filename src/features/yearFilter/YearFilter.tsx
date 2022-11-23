@@ -14,7 +14,7 @@ export const YearFilter = (): ReactElement => {
 		e.preventDefault();
 		console.log(input);
 		const currYear = new Date().getFullYear();
-		if (input > 1950 && input <= currYear) {
+		if (input >= 1950 && input <= currYear) {
 			dispatch(set(input));
 		} else {
 			if (inputRef.current != null) inputRef.current.value = "";
